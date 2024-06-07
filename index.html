@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login | SIWANI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->	
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->	
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->	
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <!-- <link rel="stylesheet" type="text/css" href="css/util.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.7); /* White background with 70% opacity */
+        }
+
+        .navbar-brand span p {
+            margin: 0;
+        }
+
+        .vh-100 {
+            background-image: url('images/bg-04.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        .vh-100::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer {
+            margin-top: auto;
+            background-color: rgba(231, 228, 228, 0.2);
+            padding: 10px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                font-size: 0.8rem;
+                padding: 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer {
+                font-size: 0.7rem;
+                padding: 3px;
+            }
+        
+        }
+
+        .siwani-text {
+            font-family: 'Arial', sans-serif; /* Ganti dengan font yang sesuai */
+            font-size: 2.5rem; /* Sesuaikan ukuran font */
+            font-weight: bold; /* Berat font */
+            color: #ff6600; /* Warna font, sesuaikan dengan keinginan Anda */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks untuk efek lebih menarik */
+        }
+    </style>
+</head>
+<body style="background-color: #bab5b5;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-transparant">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="images/logo.png" height="80" alt="Logo">
+            <span class="ms-2">
+                <p class="fw-bold mb-0"><h2 class="text-danger">MAHKAMAH AGUNG REPUBLIK INDONESIA</h2></p>
+                <p class="fw-bold mb-0"><h1 class="text-danger font-weight-bold">PENGADILAN TINGGI BANDUNG</h1></p>
+                <p class="mb-0"><h5 class="text-danger">Jalan Cimuncang No. 21 D, Bandung, Jawa Barat</h5></p>
+                <p class="mb-0 text-danger">Telp: 022-87832124, 87832127 Fax: 87832125 Email: info@pt-bandung.go.id</p>
+            </span>
+            <div>
+                <img src="images/akhlak01.png" height="50" alt="akhlaka">
+                <img src="images/bangsa.png" height="50" alt="Melayani Bangsa">
+            </div>
+        </div>
+    </nav>
+	
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+                            <h4 class="text-dark siwani-text">SIWANI</h4>
+                            <p class="text-dark">Sistem Kepegawaian Mandiri</p>
+                            <h3 class="mb-2 mt-4">Login</h3>
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <input type="text" id="typeusernameX-2" class="form-control form-control-lg" />
+                                <label class="form-label" for="typeusernameX-2">Username</label>
+                            </div>
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                                <label class="form-label" for="typePasswordX-2">Password</label>
+                            </div>                         
+                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
