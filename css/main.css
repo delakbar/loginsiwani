@@ -41,7 +41,7 @@
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
-* {
+{
 	margin: 0px; 
 	padding: 0px; 
 	box-sizing: border-box;
@@ -50,8 +50,7 @@
 body, html {
 	height: 100%;
 	/* font-family: Poppins-Regular, Arial, Helvetica, sans-serif; */
-  font-family:monospace;
-}
+  font-family: verdana, Helvetica, sans-serif;
 
 
 
